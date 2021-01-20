@@ -6,7 +6,8 @@
 
 body {
     font-family: "IBM Plex", monospace;
-    background : rgb(14, 14, 16);
+    /* font-family: sans-serif; */
+    background : #f1f1f1;
     /* opacity : 0.6; */
 }
 
@@ -32,20 +33,21 @@ h2::selection {
 
 input {
     width : 300px;
-    border-radius: 5%;
-    border : none;
+    border-radius: 1%;
+    border : 2px solid var(--p);
     outline : none;
-    padding: 5px;
+    padding: 7px;
     margin-bottom : 5px;
     /* bottom: 0; */
     /* margin-top : 500px; */
-    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.5);
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
 }
 
 button {
-    padding: 5px;
+    padding: 7px;
     border-radius: 7%;
-    border : none;
+    border : 2px solid var(--p);
+    margin-bottom : 5px;
     outline : none;
     background-color: var(--p);
     color: #FFFFFF;
@@ -60,13 +62,14 @@ button:focus {
 }
 
 .hello {
-    border: 2px solid #141615;
-  background-color: var(--nav);
+  border: 2px solid var(--p-h);
+  background-color: #f8efef;
   border-radius: 5px;
   padding: 10px;
   width : 100%;
   margin: 10px 0;
   margin-top : 15px;
+  box-shadow: 2px 2px 2px 2px rgba(10, 0, 0, 0.3);
 }
 
 
@@ -86,41 +89,6 @@ button:focus {
       color: var(--p);
   }
 
-  .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    text-align: center;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-  
-  /* Modal Content/Box */
-  .modal-content {
-    background-color: var(--nav);
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: none;
-    border-radius: 5%;
-    width: 80%; /* Could be more or less, depending on screen size */
-  }
-  
-  /* The Close Button */
-  .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
+  .output {
+    width: 50%;
   }
